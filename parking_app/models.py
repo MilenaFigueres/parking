@@ -7,10 +7,6 @@ class Own(models.Model):
 	address = models.CharField(max_length=150, default='')
 	location = models.CharField(max_length=150, default='')
 	city = models.CharField(max_length=150, default='')
-	slack = models.CharField(max_length=150, default='')
-
-	# def __string__(self):
- #        return self.name 
 
 
 class Car(models.Model):
@@ -19,8 +15,6 @@ class Car(models.Model):
         on_delete=models.CASCADE
     )
 	patent = models.CharField(max_length=10)
-	created_date = models.DateTimeField(
-            default=timezone.now)
 	color = models.CharField(max_length=50, default='')
 	model = models.CharField(max_length=150, default='')
 
