@@ -1,0 +1,190 @@
+#fondo{
+	background-image: url("../img/fondo_mercury.jpg");
+	background-size: cover;
+	min-height: 100vh;
+	background-attachment: fixed;
+}
+#fondo_sin_imagen{
+	background-size: cover;
+	min-height: 84vh;
+	background-attachment: fixed;
+}
+
+.dark-overlay{
+  background:#1E0A3C;
+	min-height: 84vh;
+}
+footer{
+	background-color: #1E0A3C;
+	color:white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+footer a{
+	color: rgb(1 ,161 ,165);
+}
+
+.content--fullheight {
+	min-height: 84vh;
+}
+ #first_form{
+	font-family: 'Raleway';
+	padding-top: 30vh;
+	color:white;
+	font-size: 3vh;
+}
+.topnavbar{
+	margin-bottom: 0;
+}
+
+#myform {
+    text-align: center;
+    padding: 5px;
+    border: 1px dotted #ccc;
+    margin: 2%;
+}
+.qty {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+}
+
+#hip_not_underline {
+	text-decoration: none;
+}
+.dot-co {
+  height: 10px;
+  width: 10px;
+  background-color: #47EC34;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot-pa {
+  height: 10px;
+  width: 10px;
+  background-color: #ECDA34;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot-pe {
+  height: 10px;
+  width: 10px;
+  background-color: #EC3434;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot-padding {
+   padding: 10px !important;
+   margin: 10px !important;
+}
+i.icon-gray {
+    color: gray;
+}
+i.icon-black {
+    color: black;
+}
+input.qtyplus { width:25px; height:25px;}
+input.qtyminus { width:25px; height:25px;}
+
+.mercury-font {
+  font-family: 'Roboto';
+  font-size: 30px;
+  color: white;
+  height: 40px;
+  letter-spacing: 1.5px;
+}
+
+.mercury-font:hover {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.title {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 50px;
+  color: black;
+}
+
+.subtitle{
+  font-family: 'Roboto';
+  font-size: 17px;
+  color: grey;
+  font-weight: 300;
+  margin-left: 2px;
+  font-style: italic;
+}
+
+.jumbotron {
+  background-color: transparent; 
+}
+
+.alerts {
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.event {
+  font-family: 'Roboto';
+  font-size: 27px;
+  color: grey;
+}
+
+#mercury{
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+
+.navigation {
+  color: grey;
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+
+.navigation:hover{
+  text-decoration: none;  
+}
+
+.titleLogin{
+  font-family: 'Roboto';
+  font-style: italic;
+  font-size: 18px;
+  color: #1E0A3C;
+}
+
+.loginEB {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 17px;
+  color: white;
+}
+#form1 li {
+  list-style: none;
+}
+
+input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+input[type=submit] {
+    padding:10px 30px; 
+    background:#6da6bd; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    color: black;
+}
