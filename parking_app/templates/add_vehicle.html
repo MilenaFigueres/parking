@@ -1,0 +1,50 @@
+{% extends './base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="jumbotron">
+        <h1 class="title">Add Vehicle</h1>
+        <p class="subtitle">Here you can register your vehicles </p>
+        <br>
+      </div>
+    </div>
+  </div>
+  <form id="delivery" method="POST">
+    {% csrf_token %}
+    <div>
+      <div class="card">
+        <h5 class="card-header">Add the fiels</h5>
+
+        <div class="card-body text-center">
+          <h4>{{ own.name }}</h4>
+        </div>
+        <div id="form1" class="text-center">
+          <ul>
+            <li>
+              <h5 class="font-weight-light">Patente</h5>
+              <input type="text" placeholder="AEI123" aria-describedby="exampleHelpText" required>
+            </li>
+            <br />
+            <li>
+              <h5 class="font-weight-light">Color</h5>
+              <input type="text" placeholder="" aria-describedby="exampleHelpText" required>
+            </li>
+            <br />
+            <li>
+              <h5 class="font-weight-light">Modelo</h5>
+              <input type="text" placeholder="" aria-describedby="exampleHelpText" required>
+            </li>
+            <br />
+            <br />
+          </ul>
+          <div class="mb-5">
+            <input type="submit" name="Save" value="Send">
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+{% endblock %}

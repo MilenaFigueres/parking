@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% load static %}
+  {% load bootstrap4 %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %} {% endblock %}</title>
+  {% block import %}
+  {% endblock %}
+  {% block scripts %}
+  {% endblock %}
+  {% bootstrap_css %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css\css.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.evbstatic.com/s3-build/30226-rc2018-10-03_16.04-d2023ac/js/node_modules/eventbrite_design_system/css/eds.css">
+</head>
+<body>
+<div>
+  <nav class="navbar sticky-top navbar-expand-sm navbar-dark" style="background-color: #1E0A3C">
+    <a id="mercury" class="navbar mercury-font" href="/">parking app</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+        <!-- {% if user.is_authenticated %} -->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <!-- {{ user.username }} -->
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          </div>
+        </li>
+      </ul>
+      <!-- {% endif %} -->
+    </div>
+  </nav>
+</div>
+  <div class="content--fullheight">
+    {% block content %}
+  </div>
+  {% endblock %}
+  <footer class="page-footer">
+    <div class="footer-copyright text-center py-3">© 2018 "Copyright":
+      <a href="#">Parking.com</a>
+    </div>
+  </footer>
+  {% bootstrap_javascript jquery='full' %}
+  {% block jsbottom %}
+  {% endblock %}
+</body>
+</html>
