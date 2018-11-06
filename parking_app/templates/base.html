@@ -24,18 +24,19 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav mr-auto">
-        <!-- {% if user.is_authenticated %} -->
+      {% if user.is_authenticated %} 
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <!-- {{ user.username }} -->
+            {{ user.username }}
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="{% url 'logout' %}">Logout</a>
           </div>
         </li>
       </ul>
-      <!-- {% endif %} -->
+      {% endif %}
     </div>
   </nav>
 </div>
