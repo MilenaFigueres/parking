@@ -1,0 +1,35 @@
+{% extends './base.html' %}
+{% load staticfiles %}
+{% load widget_tweaks %}
+{% block content %}
+<div class="container">
+ <div class="row">
+   <div class="col-12">
+     <div class="jumbotron">
+       <h1 class="title">Add Complain</h1>
+       <p class="subtitle">Here you can make a complaint </p>
+       <br>
+     </div>
+   </div>
+ </div>
+ <form action=“” method=“post”>
+  {% csrf_token %}
+  {% for hidden_field in form.hidden_fields %}
+    {{ hidden_field }}
+  {% endfor %}
+
+  {% for field in form.visible_fields %}
+    <div class="form-group">
+      {{ field.label_tag }}
+      {% render_field field class="form-control" %}
+      {% if field.help_text %}
+        <small class="form-text text-muted">{{ field.help_text }}</small>
+      {% endif %}
+    </div>
+  {% endfor %}
+   <div class="text-center mt-5">
+     <input class="button-form" type="submit" name="Save" value="Send">
+   </div>
+ </form>
+</div>
+{% endblock %}

@@ -2,6 +2,7 @@
 <html>
 <head>
   {% load static %}
+  {% load widget_tweaks %}
   {% load bootstrap4 %}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %} {% endblock %}</title>
@@ -27,8 +28,11 @@
       {% if user.is_authenticated %} 
       </ul>
       <ul class="nav navbar-nav navbar-right">
+        <li>
+           <a class="nav-title nav-link" href="#">My vehicles</a>
+        </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-title nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {{ user.username }}
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
