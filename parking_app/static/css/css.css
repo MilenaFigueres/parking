@@ -110,11 +110,20 @@ input.qtyminus { width:25px; height:25px;}
 
 .subtitle{
   font-family: 'Roboto';
-  font-size: 17px;
+  font-size: 20px;
   color: grey;
   font-weight: 300;
   margin-left: 2px;
   font-style: italic;
+}
+
+.nav-title {
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: grey;
+  font-weight: 200;
+  font-style: italic;
+  margin-right: 10px;
 }
 
 .jumbotron {
@@ -182,9 +191,26 @@ input[type=text]:focus {
 input[type=submit] {
     padding:10px 30px; 
     background:#6da6bd; 
-    border:0 none;
     cursor:pointer;
     -webkit-border-radius: 5px;
     border-radius: 5px; 
-    color: black;
+    color: white;
+    border:1px solid #111;
+}
+
+input[type=submit]:hover {
+   background-color: #ffffff; 
+   color: #6da6bd
+}
+
+.button-form{
+    width: 180px;
+}
+
+.form-control{
+  widht: 40% !important;
+}
+
+input[type=text] {
+  widht: 40% !important;
 }
